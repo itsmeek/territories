@@ -10,16 +10,3 @@ html {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-table {border-collapse: collapse;}
-td    {padding: 10px;}
-
-.sidebar{
-min-height: 1px;
-position: relative;
-float: left;
-width: 80px;
-margin-left: 0%;
-right: auto;
-left: auto;
-}

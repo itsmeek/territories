@@ -21,7 +21,7 @@ const store = createStoreWithMiddleWare(reducers)
 
 // Override font of material ui to Open Sans
 const fontFamily = "'Open Sans', sans-serif"
-const muiTheme = getMuiTheme({ fontFamily, checkbox: { labelColor: 'red' } })
+const muiTheme = getMuiTheme({ fontFamily })
 
 // Router
 const history = createBrowserHistory()
@@ -30,7 +30,7 @@ const Main = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
     <Provider store={store}>
       <Router history={history}>
-        <Container fluid style={{ padding: 0 }}>
+        <Container>
           <App />
         </Container>
       </Router>
@@ -38,4 +38,4 @@ const Main = () => (
   </MuiThemeProvider>
 )
 
-ReactDOM.render(<Main />, document.querySelector('.container-fluid'))
+ReactDOM.render(<Main />, document.querySelector('.container'))
