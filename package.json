@@ -6,25 +6,33 @@
   "scripts": {
     "json:server": "json-server --watch db.json",
     "start": "webpack-dev-server",
+    "inspect": "node --inspect server/index.js",
+    "dev": "node server/index.js",
     "build": "webpack -p --progress",
+    "deploy:local": "ngrok http --host-header=rewrite 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
     "history": "^4.6.3",
     "lodash": "^4.17.4",
     "material-ui": "^0.18.3",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-dropzone": "^4.2.0",
     "react-grid-system": "^2.9.2",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.7.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
